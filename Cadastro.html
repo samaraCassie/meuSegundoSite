@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style-form.css">
+    </head>
+
+    <body>
+
+        <!--Cabeçalho-->
+        <header>
+            <input type="checkbox" id="check">
+            <label id="icone" for="check"><img src="icone.png"></label>
+
+            <div class="barra">
+                <nav>
+                    
+                    
+                    <ul>
+                        <li>
+                            <a href="Index.html">
+                                <div class="menu">
+                                    Inicio
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Index.html#conteudo">
+                                <div class="menu">
+                                    Conteúdo
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Servico.html">
+                                <div class="menu">
+                                    Serviço
+                                </div>
+                            </a>
+                        <li>
+                            <a href="Cadastro.html">
+                                <div class="menu">
+                                    Cadastro
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Conteúdo-->
+        <div>
+
+            <article>
+
+                <section>
+                    <main class="container">
+
+                        <h2>Cadastrar</h2>
+                        <form>  
+
+                            <div class="campo">
+                                <input type="text" name="email" id="email"
+                                    placeholder="E-mail">
+                                <div class="underline"></div>
+                            </div>
+                            <br>
+                            <div class="campo">
+                                <input type="text" name="usuario" id="usuario"
+                                    placeholder="Usuário">
+                                <div class="underline"></div>
+                            </div>
+                            <br>
+                            <div class="campo">
+                                <input type="password" name="senha" id="senha"
+                                    placeholder="Senha">
+                                <div class="underline"></div>
+                            </div> 
+
+                            <br>    
+                            <p>Data de Nascimento:</p>
+                            <div class="calendario">
+                                <input type="date"/>
+                            </div>
+                            <br>
+                            <div class="radio">
+                                <input type="radio" name="sexo" value="F">
+                                <label for="Feminino">
+                                    Feminino
+                                    </label>
+
+                                <input type="radio" name="sexo" value="M">
+                                <label for="Mascolino">
+                                    Masculino
+                                </label>
+                            </div>
+                            <br>
+                            <div class="disclosure" >
+                                <p>Como você encontrou esse site?</p>
+                                <input type="checkbox" name="disclosure" id="disclosure" value="amigos">
+                                Amigos 
+                                <br>
+                                <input type="checkbox" name="disclosure" id="disclosure" value="familia">
+                                Familia 
+                                <br>
+                                <input type="checkbox" name="disclosure" id="disclosure" value="anuncios">
+                                Anúncios 
+                                <br>
+                                <input type="checkbox" name="disclosure" id="disclosure" value="discente te enviou">
+                                Discente te enviou 
+                                <br>
+                                <input type="checkbox" name="disclosure" id="disclosure" value="outros">
+                                Outros 
+                                <br>
+                            </div>
+
+                            <input type="reset" value="Resetar">
+
+                            <input type="submit" value="Enviar">
+                        
+                            <p class="pp">Ou</p>
+
+                            <a class="google" href="#">
+                                Continue com google
+                            </a>
+                            <a class="facebook" href="#">
+                                Continue com Facebook
+                            </a>
+                            <p class="pp">Já se cadastrou?<a class="link" href="Login.html">Entre</a></p>
+                        </form>
+                     
+                </section>
+            </article>
+
+            <aside>
+            </aside>
+
+        </div>
+
+        <!--Rodapé-->
+        <footer>
+            <p class="footer">Desenvolvido pela discente Samara Cassie Dos Santos com finalidade educativa sob orientações da docente Marina  Carradore Sérgio do Instituto Federal de Santa Catarina ©</p>
+        </footer>
+    </body>
+
+</html>
+

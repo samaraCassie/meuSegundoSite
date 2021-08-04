@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2? family = Mali: wght @ 200 & display = swap');
+*{
+    font-family: 'Mali', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(48, 48, 48);
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background: linear-gradient(45deg, rgb(73, 73, 73), pink);
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition: all .2s linear;
+    left: -200px;    
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(200px);
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 55px
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.404);
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 200px;
+    transition: all .2s linear;
+    opacity: 0;
+
+}
+
+.menu:hover{
+    color: rgb(255, 122, 151);
+    background: rgba(255, 255, 255, 0.404);
+    font-size: 25px;
+}
+
+#check:checked ~ .barra .menu{
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: .2s;
+}
+
+aside{
+    background:radial-gradient(rgb(29, 29, 29), rgb(10, 10, 10));
+    height: 100vh;
+    width: 200px;
+    right: 0px;
+    text-align: center;
+    float: right;
+    position: fixed;
+}
+
+section{
+    height: 100vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 205px;
+    float: left;
+}
+
+footer{
+    margin-left: 80px;
+    margin-right: 220px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+p{
+    text-align: center;
+    margin: 35px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.back{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back:hover{
+    width: 50px;
+    height: 50px;
+} 
+
